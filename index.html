@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Model</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Model</h1>
+
+    <label for="confidence">Confidence (C)</label>
+    <input type="range" id="confidence" min="0" max="1" step="0.01">
+    <span id="confidenceValue">0</span>
+
+    <label for="alpha">Coefficient (α)</label>
+    <input type="range" id="alpha" min="0" max="1" step="0.01">
+    <span id="alphaValue">0</span>
+
+    <label for="empathy">Empathy (E)</label>
+    <input type="range" id="empathy" min="0" max="1" step="0.01">
+    <span id="empathyValue">0</span>
+
+    <label for="beta">Coefficient (β)</label>
+    <input type="range" id="beta" min="0" max="1" step="0.01">
+    <span id="betaValue">0</span>
+
+    <label for="authenticity">Authenticity (A)</label>
+    <input type="range" id="authenticity" min="0" max="1" step="0.01">
+    <span id="authenticityValue">0</span>
+
+    <label for="gamma">Coefficient (γ)</label>
+    <input type="range" id="gamma" min="0" max="1" step="0.01">
+    <span id="gammaValue">0</span>
+
+    <label for="determination">Determination (D)</label>
+    <input type="range" id="determination" min="0" max="1" step="0.01">
+    <span id="determinationValue">0</span>
+
+    <label for="delta">Coefficient (δ)</label>
+    <input type="range" id="delta" min="0" max="1" step="0.01">
+    <span id="deltaValue">0</span>
+
+    <button id="updateGraph">Update Graph</button>
+
+    <canvas id="myChart" width="400" height="400"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
